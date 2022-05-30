@@ -1,6 +1,7 @@
 import express from 'express';
 import 'express-async-errors';
-
+import dotenv from 'dotenv';
+dotenv.config();
 import cors, { CorsOptions } from 'cors';
 import cookieSession from 'cookie-session';
 

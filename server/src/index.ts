@@ -1,10 +1,8 @@
 import app from "./app";
 import { connectDb } from "./config/db";
-
 // Start app Function
 const start = async () => {
     try {
-
         // Connect DB
         connectDb()
 
