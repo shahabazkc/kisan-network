@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import cors, { CorsOptions } from 'cors';
 import cookieSession from 'cookie-session';
+import { getContactsRouter } from './routes/get-contacts';
 
 
 const app = express();
@@ -31,6 +32,7 @@ app.use(
 );
 
 // Routes
+app.use('/get-contacts', getContactsRouter);
 
 // If Routes not found
 app.all('*', (req, res) => {
