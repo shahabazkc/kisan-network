@@ -1,0 +1,43 @@
+.contactList {
+    width: 100%;
+    border: 2px solid rgb(35, 43, 49);
+    border-radius: 20px;
+    padding: 20px;
+    height: 90vh;
+}
+
+.contactcard {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    /* Edge, Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow-y: scroll;
+}
+
+.contactcard::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.cardIcon {
+    font-size: 30px;
+}
+
+.cardContent {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card {
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #F2EBE9;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
