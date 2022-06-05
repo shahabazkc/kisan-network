@@ -16,7 +16,7 @@
 <h3> Points to remember </h3>
 <hr/>
 <ul>
-    <li><b> .env file is not removed for easy access. I know it is not a good </b></li>
+    <li><b> .env file is not removed for easy access. I know it is not safe and best method </b></li>
     <li><b> Database connection is set to the local. If you need to change you can edit from the .env file </b></li>
     <li><b> You can also change the Twilio api credentials from .env file </b></li>
     <li><b> Port is set to 8000 </b> </li>
