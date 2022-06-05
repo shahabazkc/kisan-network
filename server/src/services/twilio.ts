@@ -5,6 +5,7 @@ export class TwilioService {
         this.client = new Twilio(process.env?.TWILIO_ACCOUNT_SID!, process.env?.TWILIO_AUTH_TOKEN!);
     }
     client: Twilio;
+    //  Send message method
     async sendSms(number: string, body: string) {
         try {
             const message = await this.client.messages.create({

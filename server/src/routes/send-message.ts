@@ -19,9 +19,12 @@ router.post('/',
             number
         } = req.body;
 
+        // Creating a twilio instance
         const twilioService = new TwilioService();
+        // Calling the sendSms method to send message
         const { status, messageData } = await twilioService.sendSms(number, message);
 
+        // If message is not sented successfully
         if (!status) return res.status(400).send({ status: false, data: null });
 
         // Build message

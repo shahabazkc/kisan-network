@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 import cors, { CorsOptions } from 'cors';
 import cookieSession from 'cookie-session';
+
+// Importing the routers
 import { getContactsRouter } from './routes/get-contacts';
 import { getMessagesRouter } from './routes/get-message';
 import { sendMessageRouter } from './routes/send-message';
