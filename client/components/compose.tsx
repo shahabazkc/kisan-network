@@ -40,15 +40,28 @@ export const ComposeMessage: NextPage = () => {
                 number: composeData.number
             })
         })
+            .then(res => res.json())
             .then((res) => {
-                toast.success("Successfully sented !", {
-                    position: toast.POSITION.TOP_RIGHT,
-                    autoClose: 3000
-                });
 
-                changeMenu('messaging')(dispatch);
+                if (res.status) {
+                    toast.success("Successfully sented !", {
+                        position: toast.POSITION.TOP_RIGHT,
+                        autoClose: 3000
+                    });
+
+
+                    changeMenu('messaging')(dispatch);
+                } else {
+
+                    toast.error("Error while senting !", {
+                        position: toast.POSITION.TOP_RIGHT,
+                        autoClose: 3000
+                    });
+                }
+
             })
             .catch((err) => {
+
                 toast.error("Error while senting !", {
                     position: toast.POSITION.TOP_RIGHT,
                     autoClose: 3000
