@@ -16,7 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes]
 
-# Project menu navigations are controlled with redux
+<h1> Project Description </h1>
+<b> Project menu navigations are controlled with redux <b>
+  <p><b>pages/index.tsx is the file where the menu navigations and left sidebar component is writter</b></p>
+  <p><b>pages/_app.tsx is the base file where the redux is wrapped</b></p>
 
 ## Home Page Includes
 Two menus
