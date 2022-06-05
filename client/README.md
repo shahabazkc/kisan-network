@@ -16,13 +16,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes]
 
+# Project menu navigations are controlled with redux
 
 ## Home Page Includes
 Two menus
   - Contacts
   - Messages
-  - Compose
 
 <p>Contacts Menu contains the all the contact list you can view the user details by clicking the user that is fetched from the backend side also can send message button is there when clicking the button it goes to the compose component<p>
 <p>Compose component generate a 6 digit otp and by clicking submit the message will sent to the user number with body and custom message</p>
 <p>Messages Menu contains all the messages that have sented and you can read the message by clicking the message</p>
+
+
+# Used Packages
+<ul>
+  <li>Next js</li>
+  <li>Typescript</li>
+  <li>Redux</li>
+  <li>Toastify</li>
+  <li>bootstrap</li>
+  
+ </ul>
