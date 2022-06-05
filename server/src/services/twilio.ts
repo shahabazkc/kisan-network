@@ -5,18 +5,18 @@ export class TwilioService {
         this.client = new Twilio(process.env?.TWILIO_ACCOUNT_SID!, process.env?.TWILIO_AUTH_TOKEN!);
     }
     client: Twilio;
-    async sendSms(to: string, number: string, body: string) {
+    async sendSms(number: string, body: string) {
         try {
             const message = await this.client.messages.create({
-                body,
-                from: number,
-                to
+                to: "+91" + number,
+                messagingServiceSid: process.env.MESSAGE_SERVICE_SID!,
+                body
             });
-            return { status: true, message };
+            return { status: true, messageData: message };
         }
         catch (err) {
             console.log(err);
-            return { status: false, message: null };
+            return { status: false, messageData: null };
         }
     }
 }

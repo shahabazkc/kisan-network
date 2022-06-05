@@ -5,6 +5,8 @@ dotenv.config();
 import cors, { CorsOptions } from 'cors';
 import cookieSession from 'cookie-session';
 import { getContactsRouter } from './routes/get-contacts';
+import { getMessagesRouter } from './routes/get-message';
+import { sendMessageRouter } from './routes/send-message';
 
 
 const app = express();
@@ -33,6 +35,8 @@ app.use(
 
 // Routes
 app.use('/get-contacts', getContactsRouter);
+app.use('/get-messages', getMessagesRouter);
+app.use('/send-message', sendMessageRouter);
 
 // If Routes not found
 app.all('*', (req, res) => {

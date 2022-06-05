@@ -1,14 +1,14 @@
-.contactList {
+.messagingList{
     width: 100%;
     border: 2px solid rgb(35, 43, 49);
     border-radius: 20px;
     padding: 20px;
     height: 90vh;
-}
+};
 
-.contactcard {
+.messagecard{
     display: flex;
-    height: 75vh;
+    height: 80vh;
     flex-direction: column;
     -ms-overflow-style: none;
     /* Edge, Internet Explorer */
@@ -17,7 +17,7 @@
     overflow-y: scroll;
 }
 
-.contactcard::-webkit-scrollbar {
+.messagecard::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari, Opera */
 }
